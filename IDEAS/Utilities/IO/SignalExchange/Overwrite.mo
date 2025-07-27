@@ -4,6 +4,10 @@ block Overwrite "Block that allows a signal to overwritten by an FMU input"
 
   parameter String description "Description of the signal being overwritten";
 
+  parameter SignalTypes.SignalsForActuatorTravel CAT = SignalTypes.SignalsForActuatorTravel.None
+    "Tag with the type of signal for the calculation of the control actuator travel (CAT)";
+
+
   Modelica.Blocks.Logical.Switch swi
     "Switch between external signal and direct feedthrough signal"
     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
