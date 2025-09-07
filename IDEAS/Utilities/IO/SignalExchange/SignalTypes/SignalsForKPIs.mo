@@ -25,7 +25,7 @@ type SignalsForKPIs = enumeration(
     FreshWaterFlowRate
       "FreshWaterFlowRate",
     ControlActuatorTravel
-      "ControlActuatorTravel")
+      "Control actuator travel")
         "Signals used for the calculation of key performance indicators"
   annotation (Documentation(info="<html>
 <p>
